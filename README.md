@@ -56,4 +56,4 @@ Without 2FA, `./publish.sh` does both in one go.
 
 ## License
 
-MIT © [Christophe Ribeiro](https://christo.ribeiro.io)
+MIT © [Christophe Ribeiro](https://christophe.ribeiro.io)

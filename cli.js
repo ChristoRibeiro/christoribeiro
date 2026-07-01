@@ -18,8 +18,8 @@ const CONFIG = {
 
   // Order = order on screen. `key` is the single-press shortcut.
   links: [
-    { key: "s", label: "site",     value: "christo.ribeiro.io",  url: "https://christo.ribeiro.io" },
-    { key: "e", label: "email",    value: "christo@ribeiro.io",  url: "mailto:christo@ribeiro.io" },
+    { key: "s", label: "site",     value: "christophe.ribeiro.io",  url: "https://christophe.ribeiro.io" },
+    { key: "e", label: "email",    value: "christophe@ribeiro.io",  url: "mailto:christophe@ribeiro.io" },
     { key: "x", label: "x",        value: "@christoribeiro",     url: "https://x.com/christoribeiro" },
     { key: "g", label: "github",   value: "@christoribeiro",     url: "https://github.com/christoribeiro" },
     { key: "l", label: "linkedin", value: "@christoribeiro",     url: "https://linkedin.com/in/christoribeiro" },

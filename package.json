@@ -1,6 +1,6 @@
 {
   "name": "christo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "npx christo — a terminal calling card that renders right in your terminal.",
   "type": "module",
   "bin": {
@@ -21,8 +21,8 @@
     "business-card",
     "christo"
   ],
-  "author": "Christophe Ribeiro <christo@ribeiro.io>",
-  "homepage": "https://christo.ribeiro.io",
+  "author": "Christophe Ribeiro <christophe@ribeiro.io>",
+  "homepage": "https://christophe.ribeiro.io",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/christoribeiro/christo.git"
