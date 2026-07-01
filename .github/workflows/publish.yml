@@ -30,6 +30,8 @@ jobs:
       - name: Publish christo + christoribeiro (new versions only)
         run: |
           set -euo pipefail
+          echo "node $(node --version) · npm $(npm --version)"
+          echo "OIDC request url set: ${ACTIONS_ID_TOKEN_REQUEST_URL:+yes}${ACTIONS_ID_TOKEN_REQUEST_URL:-NO}"
           version=$(node -p "require('./package.json').version")
 
           # publish <npm-name> <bin-to-keep> <bin-to-drop>
