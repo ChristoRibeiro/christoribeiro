@@ -16,10 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # No registry-url on purpose: it would write a placeholder _authToken to
+      # .npmrc and npm would use that instead of OIDC. Bare npm → OIDC kicks in.
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          registry-url: https://registry.npmjs.org
 
       # trusted publishing needs npm >= 11.5.1
       - run: npm install -g npm@latest
