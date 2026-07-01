@@ -46,7 +46,7 @@ jobs:
               return
             fi
             echo "· publishing $name@$version"
-            if npm publish --access public; then
+            if npm publish --access public --verbose; then
               echo "  ✓ $name@$version published"
             else
               echo "  ✗ $name FAILED to publish"
