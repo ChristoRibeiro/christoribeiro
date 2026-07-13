@@ -33,11 +33,9 @@ projects block.
 
 ## Run locally
 
-From the monorepo root (pnpm workspace):
-
 ```bash
 pnpm install
-pnpm cli                       # or: node apps/cli/cli.js
+node cli.js        # or: npx .
 ```
 
 ## Publishing

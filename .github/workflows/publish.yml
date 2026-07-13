@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: apps/cli
+        working-directory: cli
     steps:
       - uses: actions/checkout@v4
 

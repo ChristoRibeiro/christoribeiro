@@ -1,14 +1,13 @@
 # christoribeiro
 
-Monorepo personnel de Christophe Ribeiro.
+Repo personnel de Christophe Ribeiro — deux projets indépendants, sans monorepo :
 
-- [`apps/cli`](./apps/cli) — carte de visite terminal (`npx christo` / `npx christoribeiro`), publiée sur npm.
-- [`apps/web`](./apps/web) — site personnel, déployé sur Vercel (christoribeiro.com).
+- [`cli`](./cli) — carte de visite terminal (`npx christo` / `npx christoribeiro`), publiée sur npm.
+- [`web`](./web) — site personnel Next.js, déployé sur Vercel (christoribeiro.com).
 
-## Développer
+Chaque dossier est autonome (son propre `package.json` + `pnpm-lock.yaml`) :
 
 ```bash
-pnpm install
-pnpm dev     # site Next.js (apps/web)
-pnpm cli     # lance le CLI (apps/cli)
+cd cli && pnpm install && node cli.js      # lance le CLI
+cd web && pnpm install && pnpm dev         # site Next.js — http://localhost:3000
 ```
