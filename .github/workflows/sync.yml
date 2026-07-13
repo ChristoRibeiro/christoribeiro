@@ -11,9 +11,11 @@ name: sync portfolio
 #      NOTION_TOKEN = the integration token.
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # manual "Run workflow" button in the Actions tab
   schedule:
     - cron: "0 6 * * *" # daily, 06:00 UTC
+  repository_dispatch:
+    types: [sync-portfolio] # fired by a webhook (e.g. a Notion button/automation)
 
 permissions:
   contents: write
