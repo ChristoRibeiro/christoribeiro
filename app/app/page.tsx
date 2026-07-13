@@ -1,4 +1,5 @@
 import { Avatar } from "@/components/Avatar";
+import { Portfolio } from "@/components/Portfolio";
 import { Links } from "@/components/Links";
 
 export default function Home() {
@@ -9,19 +10,18 @@ export default function Home() {
       <h1 className="mt-6 text-xl font-semibold tracking-tight text-ink">
         Christophe Ribeiro
       </h1>
-      <p className="text-grey">Technical founder · France</p>
+      <p className="text-grey">Founder &amp; software engineer · France</p>
 
       <div className="mt-7 flex flex-col gap-4 leading-relaxed text-body">
+        <p>I&apos;m a founder and software engineer building a portfolio of B2B products.</p>
         <p>
-          I build and ship software products on my own — from the first commit
-          to the thing that goes live.
-        </p>
-        <p>
-          Right now I&apos;m building a few products I&apos;m not ready to talk
-          about yet, and I put small tools on npm along the way — like{" "}
-          <code className="font-mono text-[0.9em]">npx christo</code>.
+          Foreach, my consulting studio, funds the work. The rest goes into
+          products of my own — a few still in stealth — and small tools I ship in
+          the open, like <code className="font-mono text-[0.9em]">npx christo</code>.
         </p>
       </div>
+
+      <Portfolio />
 
       <Links />
     </main>
