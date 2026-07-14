@@ -10,7 +10,31 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
 }
 
-html {
+:root {
+  color-scheme: light;
+}
+
+/* Dark palette: follows the OS unless an explicit light choice is stored, and
+   follows the data-theme toggle. Tailwind's color utilities read these vars. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: #0d0d10;
+    --color-ink: #ededf0;
+    --color-body: #c7c7ce;
+    --color-grey: #82828b;
+    --color-line: #24242b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --color-paper: #0d0d10;
+  --color-ink: #ededf0;
+  --color-body: #c7c7ce;
+  --color-grey: #82828b;
+  --color-line: #24242b;
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
   color-scheme: light;
 }
 
@@ -23,4 +47,5 @@ body {
 body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
