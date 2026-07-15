@@ -4,7 +4,7 @@ import { Links } from "@/components/Links";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-20">
+    <main className="mx-auto flex min-h-screen max-w-lg flex-col justify-center px-6 py-20">
       <Avatar />
 
       <h1 className="mt-6 text-xl font-semibold tracking-tight text-ink">
@@ -12,15 +12,14 @@ export default function Home() {
       </h1>
       <p className="text-grey">Founder &amp; software engineer · France</p>
 
-      <div className="mt-7 flex flex-col gap-4 leading-relaxed text-body">
-        <p>I&apos;m a founder and software engineer building a portfolio of B2B products.</p>
-        <p>
-          Foreach, my consulting studio, funds the work. The rest goes into
-          products of my own — a few still in stealth.
-        </p>
-      </div>
+      <p className="mt-6 leading-relaxed text-body">
+        I&apos;m a founder and software engineer building a portfolio of simple
+        but powerful B2B products.
+      </p>
 
-      <Portfolio />
+      <div className="mt-8">
+        <Portfolio />
+      </div>
 
       <Links />
     </main>

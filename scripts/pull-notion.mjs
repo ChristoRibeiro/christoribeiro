@@ -42,6 +42,7 @@ const rows = results.map((page) => {
   const p = page.properties;
   return {
     name: plain(p.Name?.title),
+    cta: plain(p.CTA?.rich_text), // optional "CTA" text property → the link's button label
     tagline: plain(p.Description?.rich_text),
     url: p.Website?.url || p.Github?.url || "",
     status: (p.Status?.status?.name || "").toLowerCase(),

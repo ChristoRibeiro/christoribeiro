@@ -1,12 +1,12 @@
 [
   {
     "name": "Foreach",
-    "desc": "B2B consulting studio",
+    "desc": "B2B consulting",
     "url": "https://foreach.dev"
   },
   {
     "name": "Eanscan",
-    "desc": "Product data sheets for retailers",
+    "desc": "Product sheets, automated",
     "url": "https://eanscan.com"
   }
 ]

@@ -34,7 +34,7 @@ writeFileSync(readmePath, nextReadme);
 
 // ---- site: app/lib/projects.ts ----
 const ts = `// GENERATED from /data.json by scripts/generate.mjs — do not edit by hand.
-export type Project = { name: string; tagline: string; url?: string; status: string };
+export type Project = { name: string; cta?: string; tagline: string; url?: string; status: string };
 
 export const PROJECTS: Project[] = ${JSON.stringify(projects, null, 2)};
 

@@ -7,8 +7,8 @@ Foreach, my consulting studio, funds the work. The rest goes into products of my
 ### Building
 
 <!-- projects:start -->
-- [**Foreach**](https://foreach.dev) — B2B consulting studio
-- [**Eanscan**](https://eanscan.com) — Product data sheets for retailers
+- [**Foreach**](https://foreach.dev) — B2B consulting
+- [**Eanscan**](https://eanscan.com) — Product sheets, automated
 - More, in stealth
 <!-- projects:end -->
 
