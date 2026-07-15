@@ -4,6 +4,7 @@ node_modules/
 .next/
 .vercel/
 out/
+*.tsbuildinfo
 
 # pnpm-only repo — block stray npm/yarn lockfiles (pnpm-lock.yaml is the committed one)
 package-lock.json
