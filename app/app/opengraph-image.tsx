@@ -30,17 +30,7 @@ export default function OpengraphImage() {
           style={{ objectFit: "cover", borderRadius: "50%", marginBottom: 40 }}
           alt=""
         />
-        <div style={{ fontSize: 34, color: "#82828b", letterSpacing: 1 }}>
-          christoribeiro.com
-        </div>
-        <div
-          style={{
-            fontSize: 92,
-            fontWeight: 700,
-            marginTop: 18,
-            letterSpacing: -2,
-          }}
-        >
+        <div style={{ fontSize: 92, fontWeight: 700, letterSpacing: -2 }}>
           Christophe Ribeiro
         </div>
         <div style={{ fontSize: 46, color: "#c7c7ce", marginTop: 12 }}>
