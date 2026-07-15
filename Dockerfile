@@ -1,4 +1,4 @@
-# Next.js (standalone) image for Dokploy. Build context = app/ (the Vercel-less root).
+# Next.js (standalone) image for Dokploy. Build context = the repo root.
 # ---- build ----
 FROM node:24-alpine AS builder
 WORKDIR /app

@@ -2,7 +2,7 @@
 // Single source of truth = /data.json (public projects only, no MRR, no stealth names).
 // This regenerates every public surface from it:
 //   - README.md          (between the <!-- projects:start/end --> markers)
-//   - app/lib/projects.ts (the site's Portfolio data)
+//   - lib/projects.ts     (the site's Portfolio data)
 // Runs offline — no network. Run by hand (`node scripts/generate.mjs`) or by the
 // sync workflow after pull-notion.mjs refreshes data.json.
 import { readFileSync, writeFileSync } from "node:fs";
@@ -49,6 +49,6 @@ export const PROJECTS: Project[] = ${JSON.stringify(pub, null, 2)};
 
 export const HAS_STEALTH = ${hasStealth};
 `;
-writeFileSync(join(root, "app/lib/projects.ts"), ts);
+writeFileSync(join(root, "lib/projects.ts"), ts);
 
 console.log(`generated: ${projects.length} public project(s), hasStealth=${hasStealth}`);
