@@ -1,8 +1,7 @@
-// Replace /me.svg with your photo (drop app/public/me.jpg and change the src).
 export function Avatar() {
   return (
     <img
-      src="/me.svg"
+      src="/me.jpg"
       alt="Christophe Ribeiro"
       width={64}
       height={64}

@@ -4,7 +4,7 @@ export type Project = { name: string; cta?: string; tagline: string; url?: strin
 export const PROJECTS: Project[] = [
   {
     "name": "Foreach",
-    "cta": "Work with me",
+    "cta": "work with me",
     "tagline": "B2B consulting",
     "url": "https://foreach.dev",
     "status": "live"
@@ -17,4 +17,4 @@ export const PROJECTS: Project[] = [
   }
 ];
 
-export const HAS_STEALTH = true;
+export const HAS_STEALTH = false;

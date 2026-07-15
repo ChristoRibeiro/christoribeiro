@@ -53,7 +53,10 @@ const rows = results.map((page) => {
 const projects = rows
   .filter((r) => !r.stealth && r.name)
   .map(({ stealth, ...rest }) => rest); // drop the stealth flag; keep only public fields
-const hasStealth = rows.some((r) => r.stealth);
+// Only tease stealth when something is actually cooking (building or live), not a mere idea.
+const hasStealth = rows.some(
+  (r) => r.stealth && (r.status === "building" || r.status === "live")
+);
 
 const data = { generatedAt: new Date().toISOString(), hasStealth, projects };
 writeFileSync(join(root, "data.json"), JSON.stringify(data, null, 2) + "\n");
