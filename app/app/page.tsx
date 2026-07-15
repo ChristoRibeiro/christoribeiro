@@ -1,6 +1,5 @@
 import { Avatar } from "@/components/Avatar";
 import { Navbar } from "@/components/Navbar";
-import { Eyebrow } from "@/components/Eyebrow";
 import { Portfolio } from "@/components/Portfolio";
 import { Links } from "@/components/Links";
 
@@ -14,15 +13,13 @@ export default function Home() {
         <h1 className="mt-6 text-xl font-semibold tracking-tight text-ink">
           Christophe Ribeiro
         </h1>
-        <p className="text-grey">Founder &amp; software engineer · France</p>
+        <p className="text-grey">Entrepreneur &amp; Software Engineer</p>
+
+        <p className="mt-6 leading-relaxed text-body">
+          Currently building a portfolio of simple but powerful B2B products.
+        </p>
 
         <div className="mt-10 flex flex-col gap-9">
-          <section>
-            <Eyebrow>Goal</Eyebrow>
-            <p className="leading-relaxed text-body">
-              On a mission to build a portfolio of simple but powerful B2B products.
-            </p>
-          </section>
           <Portfolio />
           <Links />
         </div>

@@ -5,7 +5,6 @@
   --color-ink: #17171a;
   --color-body: #2c2c31;
   --color-grey: #8b8b90;
-  --color-mute: #56565c;
   --color-line: #ececef;
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
@@ -23,7 +22,6 @@
     --color-ink: #ededf0;
     --color-body: #c7c7ce;
     --color-grey: #82828b;
-    --color-mute: #a6a6ae;
     --color-line: #24242b;
     color-scheme: dark;
   }
@@ -33,7 +31,6 @@
   --color-ink: #ededf0;
   --color-body: #c7c7ce;
   --color-grey: #82828b;
-  --color-mute: #a6a6ae;
   --color-line: #24242b;
   color-scheme: dark;
 }
