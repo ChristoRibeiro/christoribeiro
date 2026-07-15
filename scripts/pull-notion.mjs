@@ -31,7 +31,16 @@ const res = await fetch(`https://api.notion.com/v1/databases/${dbId}/query`, {
   body: JSON.stringify({ page_size: 100 }),
 });
 if (!res.ok) {
-  console.error(`Notion API ${res.status}: ${await res.text()}`);
+  const detail = await res.text();
+  if (res.status === 404) {
+    console.error(
+      `Notion 404 — the integration behind NOTION_TOKEN cannot see database ${dbId}.\n` +
+        `Fix (in Notion): open the Portfolio database → ••• (top-right) → Connections → add that integration.\n` +
+        detail
+    );
+  } else {
+    console.error(`Notion API ${res.status}: ${detail}`);
+  }
   process.exit(1);
 }
 const { results } = await res.json();
