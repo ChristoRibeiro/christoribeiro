@@ -7,9 +7,6 @@ RUN corepack enable
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY . .
-# Projects are fetched from Notion at build time — needs the token during build.
-ARG NOTION_TOKEN
-ENV NOTION_TOKEN=$NOTION_TOKEN
 RUN pnpm build
 
 # ---- run ----

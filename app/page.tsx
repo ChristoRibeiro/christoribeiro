@@ -3,8 +3,8 @@ import { Navbar } from "@/components/Navbar";
 import { Portfolio } from "@/components/Portfolio";
 import { Links } from "@/components/Links";
 
-// Projects are fetched from Notion at build time — keep the page static.
-export const dynamic = "force-static";
+// Projects are fetched from Notion at request time — no build-time token needed.
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
