@@ -22,7 +22,6 @@ export default function OpengraphImage() {
           fontFamily: "sans-serif",
         }}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={photoDataUri()}
           width={168}
