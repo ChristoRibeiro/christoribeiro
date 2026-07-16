@@ -3,6 +3,9 @@ import { Navbar } from "@/components/Navbar";
 import { Portfolio } from "@/components/Portfolio";
 import { Links } from "@/components/Links";
 
+// Projects are fetched from Notion at build time — keep the page static.
+export const dynamic = "force-static";
+
 export default function Home() {
   return (
     <>
