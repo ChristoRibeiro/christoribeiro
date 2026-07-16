@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 // Single source of truth = /data.json (public projects only, no MRR, no stealth names).
-// This regenerates every public surface from it:
-//   - README.md          (between the <!-- projects:start/end --> markers)
-//   - lib/projects.ts     (the site's Portfolio data)
+// This regenerates the site's Portfolio data (lib/projects.ts) from it.
 // Runs offline — no network. Run by hand (`node scripts/generate.mjs`) or by the
 // sync workflow after pull-notion.mjs refreshes data.json.
 import { readFileSync, writeFileSync } from "node:fs";
@@ -25,23 +23,7 @@ const pub = projects.map((p) => ({
   cta: p.cta || CTA_OVERRIDES[p.name] || p.cta,
 }));
 
-// ---- README: replace the managed block ----
-const readmePath = join(root, "README.md");
-const items = pub.map((p) =>
-  p.url ? `- [**${p.name}**](${p.url}) — ${p.tagline}` : `- **${p.name}** — ${p.tagline}`
-);
-const block = `<!-- projects:start -->\n${items.join("\n")}\n<!-- projects:end -->`;
-const readme = readFileSync(readmePath, "utf8");
-const nextReadme = readme.replace(
-  /<!-- projects:start -->[\s\S]*?<!-- projects:end -->/,
-  block
-);
-if (!/<!-- projects:start -->/.test(readme)) {
-  throw new Error("README.md is missing the <!-- projects:start --> markers");
-}
-writeFileSync(readmePath, nextReadme);
-
-// ---- site: app/lib/projects.ts ----
+// ---- site: lib/projects.ts ----
 const ts = `// GENERATED from /data.json by scripts/generate.mjs — do not edit by hand.
 export type Project = { name: string; cta?: string; tagline: string; url?: string; status: string };
 
