@@ -1,14 +1,13 @@
-# Christophe Ribeiro
+<p align="center">
+  <a href="https://christoribeiro.com">
+    <img src="./assets/polar-laptop-film.svg" width="100%" alt="A polar bear works on a sticker-covered laptop before a sunglasses-wearing puffin interrupts him." />
+  </a>
+</p>
 
-**Entrepreneur & Software Engineer.** Currently building a portfolio of simple but powerful B2B products.
-
-### Building
-
-<!-- projects:start -->
-- [**Eanscan**](https://eanscan.com) — Product sheets API
-- [**Foreach**](https://foreach.dev) — B2B consulting
-<!-- projects:end -->
-
-### Contact
-
-[Site](https://christoribeiro.com) · [X/Twitter](https://x.com/christoribeiro) · [LinkedIn](https://linkedin.com/in/christoribeiro)
+<p align="center">
+  <a href="https://christoribeiro.com">christoribeiro.com</a>
+  ·
+  <a href="https://x.com/christoribeiro">X</a>
+  ·
+  <a href="https://linkedin.com/in/christoribeiro">LinkedIn</a>
+</p>
